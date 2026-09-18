@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 90" fill="none">
+  <!-- Architectural Roof Crest Emblem -->
+  <g transform="translate(8, 8)">
+    <!-- Shield / Roof Peak Background -->
+    <path d="M37 4L70 30V68C70 70.2 68.2 72 66 72H8C5.8 72 4 70.2 4 68V30L37 4Z" fill="#14181D" stroke="#C85A32" stroke-width="2"/>
+    
+    <!-- Stylised Chimney Stack with Terracotta Cap -->
+    <rect x="50" y="12" width="10" height="18" fill="#C85A32"/>
+    <rect x="48" y="10" width="14" height="3" fill="#E27248" rx="1"/>
+    
+    <!-- Pitched Roof Lines & Slate Ridges -->
+    <path d="M37 12L62 32H12L37 12Z" fill="#1E242C"/>
+    <path d="M37 12L12 32V64H62V32L37 12Z" stroke="#F4F4F2" stroke-width="1.5" stroke-linejoin="round"/>
+    <line x1="20" y1="42" x2="54" y2="42" stroke="#C85A32" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <line x1="16" y1="52" x2="58" y2="52" stroke="#C85A32" stroke-width="1.5" stroke-dasharray="3 2"/>
+    
+    <!-- Lead Flashing Detail Angle -->
+    <path d="M37 26L48 35H26L37 26Z" fill="#C85A32"/>
+    
+    <!-- 5-Star Crest Notch at Base -->
+    <circle cx="37" cy="62" r="3" fill="#F59E0B"/>
+  </g>
+  
+  <!-- Wordmark Typography -->
+  <text x="96" y="44" font-family="'Plus Jakarta Sans', 'Cinzel', 'Playfair Display', Georgia, serif" font-size="28" font-weight="800" letter-spacing="1.5" fill="#FFFFFF">MARK THE ROOF</text>
+  
+  <!-- Sub-label / Provenance -->
+  <text x="98" y="66" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.5" fill="#C85A32">ROOFING SPECIALISTS • KINGS HEATH, BIRMINGHAM</text>
+  
+  <!-- Subtle Architectural Metric Marker -->
+  <line x1="98" y1="73" x2="480" y2="73" stroke="#2B3440" stroke-width="1"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#14181D"/>
+  <!-- Pitched Roof -->
+  <path d="M32 8L56 28V52C56 54.2 54.2 56 52 56H12C9.8 56 8 54.2 8 52V28L32 8Z" fill="#1D242D" stroke="#C85A32" stroke-width="2.5"/>
+  <!-- Chimney with Pot -->
+  <rect x="42" y="14" width="7" height="12" fill="#C85A32"/>
+  <rect x="40.5" y="12" width="10" height="2.5" fill="#E27248" rx="1"/>
+  <!-- Stylized M & Roof Ridge -->
+  <path d="M22 46V32L32 23L42 32V46" stroke="#F4F4F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 46V36L32 32L36 36V46" stroke="#C85A32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Gold Accent Star -->
+  <circle cx="32" cy="50" r="2" fill="#F59E0B"/>
+</svg>
