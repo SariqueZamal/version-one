@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sariquezamal.github.io/version-one/elmdon-roofing/sitemap.xml
