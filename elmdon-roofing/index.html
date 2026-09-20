@@ -996,81 +996,95 @@
           <span class="badge-tag badge-amber">Local West Midlands Base</span>
           <h2 class="section-title" id="areas-title">Areas We Cover Across Birmingham &amp; Solihull</h2>
           <p class="section-subtitle">
-            Centrally based at 142 Manor House Lane (B26 1PS), providing rapid response times across these verified service areas:
+            Centrally based at 142 Manor House Lane (B26 1PS), providing rapid emergency response and scheduled roofing across these verified areas:
           </p>
         </div>
 
+        <!-- Areas Category Filter Tabs -->
+        <div class="areas-tabs" role="tablist" aria-label="Coverage Area Categories">
+          <button class="area-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Service Areas (9)</button>
+          <button class="area-tab-btn" data-filter="base" role="tab" aria-selected="false">Immediate B26 Base</button>
+          <button class="area-tab-btn" data-filter="solihull" role="tab" aria-selected="false">Solihull &amp; South</button>
+          <button class="area-tab-btn" data-filter="birmingham" role="tab" aria-selected="false">Central &amp; North Birmingham</button>
+        </div>
+
         <div class="areas-grid">
-          <div class="area-card">
+          <div class="area-card featured-base" data-category="base">
             <div>
-              <div class="area-info-name">Elmdon &amp; Sheldon</div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                <span class="area-info-name" style="margin-bottom: 0;">Elmdon &amp; Sheldon</span>
+                <span style="font-size: 0.68rem; font-weight: 800; background: rgba(245, 158, 11, 0.2); color: #fbbf24; padding: 0.15rem 0.45rem; border-radius: 9999px; border: 1px solid rgba(245, 158, 11, 0.4);">★ HQ Base</span>
+              </div>
               <div class="area-info-codes">Postcodes: B26 1PS, B26</div>
             </div>
-            <span class="area-time-badge">Immediate Base</span>
+            <span class="area-time-badge badge-primary-base">
+              <span class="topbar-pulse" style="width: 6px; height: 6px;" aria-hidden="true"></span>
+              Immediate Base
+            </span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="solihull">
             <div>
               <div class="area-info-name">Solihull &amp; Shirley</div>
               <div class="area-info-codes">Postcodes: B90, B91, B92, B93</div>
             </div>
-            <span class="area-time-badge">15–20 Mins</span>
+            <span class="area-time-badge">⏱️ 15–20 Mins</span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="base">
             <div>
               <div class="area-info-name">Yardley &amp; Acocks Green</div>
               <div class="area-info-codes">Postcodes: B25, B27, B28</div>
             </div>
-            <span class="area-time-badge">10–15 Mins</span>
+            <span class="area-time-badge">⏱️ 10–15 Mins</span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="solihull">
             <div>
               <div class="area-info-name">Marston Green &amp; Coleshill</div>
               <div class="area-info-codes">Postcodes: B37, B46</div>
             </div>
-            <span class="area-time-badge">15–20 Mins</span>
+            <span class="area-time-badge">⏱️ 15–20 Mins</span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="birmingham">
             <div>
               <div class="area-info-name">Sutton Coldfield &amp; Erdington</div>
               <div class="area-info-codes">Postcodes: B72, B73, B74, B23, B24</div>
             </div>
-            <span class="area-time-badge">25–35 Mins</span>
+            <span class="area-time-badge">⏱️ 25–35 Mins</span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="solihull">
             <div>
               <div class="area-info-name">Moseley &amp; Kings Heath</div>
               <div class="area-info-codes">Postcodes: B13, B14, B30</div>
             </div>
-            <span class="area-time-badge">20–25 Mins</span>
+            <span class="area-time-badge">⏱️ 20–25 Mins</span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="birmingham">
             <div>
               <div class="area-info-name">Harborne &amp; Edgbaston</div>
               <div class="area-info-codes">Postcodes: B15, B16, B17</div>
             </div>
-            <span class="area-time-badge">25–30 Mins</span>
+            <span class="area-time-badge">⏱️ 25–30 Mins</span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="birmingham">
             <div>
               <div class="area-info-name">West Bromwich &amp; Smethwick</div>
               <div class="area-info-codes">Postcodes: B66, B67, B70, B71</div>
             </div>
-            <span class="area-time-badge">30 Mins</span>
+            <span class="area-time-badge">⏱️ 30 Mins</span>
           </div>
 
-          <div class="area-card">
+          <div class="area-card" data-category="birmingham">
             <div>
               <div class="area-info-name">Perry Barr &amp; Great Barr</div>
               <div class="area-info-codes">Postcodes: B42, B43, B44</div>
             </div>
-            <span class="area-time-badge">30 Mins</span>
+            <span class="area-time-badge">⏱️ 30 Mins</span>
           </div>
         </div>
 
@@ -1185,69 +1199,89 @@
           </p>
         </div>
 
+        <!-- Multi-Trillion Dollar Live Status & Telemetry Bar -->
+        <div class="contact-telemetry-banner">
+          <div class="contact-telemetry-item">
+            <span class="contact-telemetry-dot"></span>
+            <span>Live Dispatch Active: 142 Manor House Ln, B26 1PS</span>
+          </div>
+          <div class="contact-telemetry-item">
+            <span>⚡ Telephone Response: &lt; 3 Rings</span>
+          </div>
+          <div class="contact-telemetry-item">
+            <span>🛡️ 100% Free Written Quotes • Zero Obligation</span>
+          </div>
+        </div>
+
         <div class="contact-grid">
           <!-- Left Column: Verified Contact Details & Map -->
           <div class="contact-info-card">
-            <h3 style="font-size: 1.4rem; font-weight: 800; color: #ffffff; margin-bottom: 1.5rem;">
-              Direct Business Details
-            </h3>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+              <h3 style="font-size: 1.35rem; font-weight: 800; color: #ffffff; margin: 0;">
+                Direct Operations Hub
+              </h3>
+              <span style="font-size: 0.72rem; font-weight: 700; color: #34d399; background: rgba(16, 185, 129, 0.12); padding: 0.2rem 0.55rem; border-radius: 9999px; border: 1px solid rgba(16, 185, 129, 0.3);">● Online Now</span>
+            </div>
 
             <div class="contact-detail-row">
               <div class="contact-icon-box" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               </div>
-              <div>
+              <div style="flex: 1;">
                 <div class="contact-detail-title">Telephone / Mobile</div>
                 <div class="contact-detail-val">
                   <a href="tel:+447874347400">07874 347400</a>
                 </div>
-                <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Direct mobile line for quotes &amp; emergencies</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">Direct mobile line for quotes &amp; emergency repairs</div>
               </div>
+              <a href="tel:+447874347400" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 9999px; flex-shrink: 0;">Call ↗</a>
             </div>
 
             <div class="contact-detail-row">
               <div class="contact-icon-box" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
               </div>
-              <div>
+              <div style="flex: 1;">
                 <div class="contact-detail-title">WhatsApp Chat</div>
                 <div class="contact-detail-val">
                   <a href="https://wa.me/447874347400?text=Hello%20Elmdon%20Roofing,%20I'd%20like%20to%20enquire%20about%20a%20roofing%20quote." target="_blank" rel="noopener noreferrer" style="color: #34d399;">
-                    Message +44 7874 347400
+                    +44 7874 347400
                   </a>
                 </div>
-                <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Send roof photos directly for fast analysis</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">Send roof photos for rapid preliminary estimate</div>
               </div>
+              <a href="https://wa.me/447874347400" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding: 0.35rem 0.75rem; font-size: 0.75rem; border-radius: 9999px; flex-shrink: 0;">Chat ↗</a>
             </div>
 
             <div class="contact-detail-row">
               <div class="contact-icon-box" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               </div>
               <div>
                 <div class="contact-detail-title">Email Enquiries</div>
                 <div class="contact-detail-val">
                   <a href="mailto:dantamworth890@gmail.com">dantamworth890@gmail.com</a>
                 </div>
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">Architectural plans, surveyor reports, and inquiries</div>
               </div>
             </div>
 
             <div class="contact-detail-row">
               <div class="contact-icon-box" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               </div>
               <div>
-                <div class="contact-detail-title">Operating Address</div>
+                <div class="contact-detail-title">Registered Operating Base</div>
                 <div class="contact-detail-val">
                   142 Manor House Ln, Birmingham B26 1PS, UK
                 </div>
-                <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Serving Birmingham, Solihull &amp; West Midlands</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">Serving Birmingham, Solihull &amp; West Midlands</div>
               </div>
             </div>
 
             <div class="contact-detail-row" style="margin-bottom: 0;">
               <div class="contact-icon-box" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
               </div>
               <div>
                 <div class="contact-detail-title">Opening Hours</div>
@@ -1457,7 +1491,7 @@
        ========================================================================== -->
   <a href="https://wa.me/447874347400?text=Hello%20Elmdon%20Roofing,%20I'd%20like%20to%20enquire%20about%20a%20roofing%20service%20in%20Birmingham/Solihull.%20Could%20you%20please%20provide%20some%20information?" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Elmdon Roofing on WhatsApp">
     <span class="whatsapp-tooltip">Chat on WhatsApp</span>
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
   </a>
 
   <!-- ==========================================================================

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initReviewsCarousel();
   initFaqAccordion();
   initContactForm();
+  initAreaTabs();
 });
 
 /* ==========================================================================
@@ -425,5 +426,35 @@ function initContactForm() {
         submitBtn.innerHTML = '✓ Enquiry Submitted';
       }
     }, 900);
+  });
+}
+
+/* ==========================================================================
+   9. COVERAGE AREAS TAB FILTERING
+   ========================================================================== */
+function initAreaTabs() {
+  const tabs = document.querySelectorAll('.area-tab-btn');
+  const cards = document.querySelectorAll('.areas-grid .area-card');
+  if (!tabs.length || !cards.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const filter = tab.getAttribute('data-filter');
+      cards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
   });
 }
