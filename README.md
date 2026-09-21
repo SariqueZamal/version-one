@@ -26,24 +26,38 @@ Welcome to **Version One**, a showcase repository for verified client and busine
 
 ---
 
+## 🌿 Featured Website 3: Green Roofers Ltd (London & UK-Wide)
+
+- **Business Name**: Green Roofers Ltd
+- **Location**: 1st Floor, 2 Woodberry Grove, Finchley, London (N12 0DR), UK
+- **Phone**: Office `020 7754 0365`
+- **Email**: `info@greenroofers.co.uk`
+- **Brand Positioning**: Premium Architectural Studio · Sustainable Construction · Environmental Tech
+- **Core Specialisms**: Ecologically-led living roof design, specialist materials supply (sedum blankets, lightweight volcanic substrates, acicular drainage cores), CDM & HSE certified installation, and long-term aftercare maintenance.
+- **Notable Case Studies**: White Collar Factory (Old Street, London — Derwent London / AHMM), Biosolar Commercial PV Arrays, Intensive Rooftop Terrace Gardens, Biodiverse Invertebrate Sanctuaries (BNG & UGF compliance).
+- **Guarantees**: System guarantees of up to 20 Years based on selective aftercare agreements.
+- **Direct Live Link**: [View Green Roofers Ltd Website](https://sariquezamal.github.io/version-one/green-roofers/)
+
+---
+
 ## 📁 Repository Structure
 
 ```
 version-one/
 ├── index.html            # Main Version One project showcase portal
+├── green-roofers/        # High-End Living Infrastructure & Architecture Platform
+│   ├── index.html        # Flagship Homepage with 11 Core Creative Sections
+│   ├── services.html     # Design, Supply, Installation, Aftercare & 20-Year Guarantees
+│   ├── green-roofs.html  # Technical Breakdown of Extensive, Intensive & Biosolar Systems
+│   ├── projects.html     # Architectural Portfolio Archive & White Collar Factory Case Study
+│   ├── about.html        # Company Heritage, London HQ, Horticultural Science, CDM Safety
+│   ├── guides.html       # Educational Insights, UGF & BNG Policy Guidance
+│   ├── contact.html      # Tender & Project Specification Booking Engine
+│   ├── css/
+│   │   └── main.css      # Fluid Responsive Design System (iPhone, iPad, Mac, Ultra-wide)
+│   └── js/
+│       └── main.js       # Before/After Slider, 7-Layer Cutaway Explorer, Estimator, Canvas Particles
 ├── elmdon-roofing/       # Complete Birmingham & Solihull roofing platform
-│   ├── index.html        # Flagship Homepage with Interactive Estimator & Before/After Slider
-│   ├── services.html     # Comprehensive 12-Service Breakdown & Materials Guide
-│   ├── about.html        # Company Heritage, 15+ Yrs Trade Background, Guarantees
-│   ├── projects.html     # Case Studies & Real Work Photo Gallery
-│   ├── areas-covered.html# Local Birmingham & Solihull SEO Hub & Postcodes
-│   ├── contact.html      # Direct Quote Booking, Google Map & File Upload Form
-│   ├── style.css         # Responsive Agency-Grade Design System (WCAG 2.2 AA)
-│   ├── script.js         # Interactive Components Engine (Before/After, Tabs, Calculator)
-│   ├── robots.txt        # Production Search Engine Directives
-│   ├── sitemap.xml       # Production XML Sitemap
-│   ├── data/             # Central Source of Truth (business.js)
-│   └── assets/           # Optimized Authentic Photos, SVG Brand Crest & Favicon
 ├── mark-the-roof/        # Kings Heath Birmingham roofing website
 └── .github/workflows/    # Automated GitHub Pages deployment pipeline
 ```
@@ -54,5 +68,6 @@ version-one/
 
 The portal and websites are hosted live on GitHub Pages:
 - **Main Portal**: [https://sariquezamal.github.io/version-one/](https://sariquezamal.github.io/version-one/)
+- **Green Roofers Ltd**: [https://sariquezamal.github.io/version-one/green-roofers/](https://sariquezamal.github.io/version-one/green-roofers/)
 - **Elmdon Roofing Services**: [https://sariquezamal.github.io/version-one/elmdon-roofing/](https://sariquezamal.github.io/version-one/elmdon-roofing/)
 - **Mark The Roof**: [https://sariquezamal.github.io/version-one/mark-the-roof/](https://sariquezamal.github.io/version-one/mark-the-roof/)
