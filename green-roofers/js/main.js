@@ -49,10 +49,12 @@ function initMobileNav() {
     const isOpen = overlay.classList.contains('open');
     if (isOpen) {
       overlay.classList.remove('open');
+      toggleBtn.classList.remove('open');
       document.body.style.overflow = '';
       toggleBtn.setAttribute('aria-expanded', 'false');
     } else {
       overlay.classList.add('open');
+      toggleBtn.classList.add('open');
       document.body.style.overflow = 'hidden';
       toggleBtn.setAttribute('aria-expanded', 'true');
     }
@@ -63,6 +65,7 @@ function initMobileNav() {
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       overlay.classList.remove('open');
+      toggleBtn.classList.remove('open');
       document.body.style.overflow = '';
       toggleBtn.setAttribute('aria-expanded', 'false');
     });
@@ -380,9 +383,18 @@ function initBeforeAfterSlider() {
     setPosition(e.clientX);
   });
 
-  // Touch events (iPhone / iPad)
-  handle.addEventListener('touchstart', () => { isDragging = true; }, { passive: true });
+  // Touch events (iPhone / iPad / Android)
+  const onTouchStart = (e) => {
+    isDragging = true;
+    if (e.touches && e.touches[0]) {
+      setPosition(e.touches[0].clientX);
+    }
+  };
+
+  handle.addEventListener('touchstart', onTouchStart, { passive: true });
+  container.addEventListener('touchstart', onTouchStart, { passive: true });
   window.addEventListener('touchend', () => { isDragging = false; });
+  window.addEventListener('touchcancel', () => { isDragging = false; });
   window.addEventListener('touchmove', (e) => {
     if (!isDragging || !e.touches[0]) return;
     setPosition(e.touches[0].clientX);
